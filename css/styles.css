@@ -1,0 +1,44 @@
+:root {
+  --dark-blue: #306ec5e6;
+  --light-blue: #87b2ef;
+  --white: #ffffff;
+}
+
+body {
+  margin: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: var(--dark-blue);
+}
+
+.main-section {
+  display: grid;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 38px;
+}
+
+.timer {
+  display: flex;
+  justify-self: center;
+}
+
+.container {
+  width: 80px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: var(--light-blue);
+  color: var(--white);
+  justify-content: center;
+  display: grid;
+  font-size: 40px;
+}
+
+label {
+  font-size: 25px;
+  margin: 10px;
+}
