@@ -10,8 +10,8 @@ heading.innerHTML = "<h1>" + "What time is it?!" + "</h1>";
 const timer = document.querySelector(".timer");
 
 function realTimeClock() {
-  var currentTime = new Date().getTime();
-  var timeDifference = currentTime;
+  let currentTime = new Date().getTime();
+  let timeDifference = currentTime;
 
   const seconds = Math.floor((timeDifference / 1000) % 60);
   const minutes = Math.floor((timeDifference / (1000 * 60)) % 60);
@@ -33,7 +33,7 @@ setInterval(realTimeClock, 1000);
 // 2. Update the design - make it look like a real clock
 // 3. Local time - EX: let s= new Date().toLocaleString();
 
-var button = document.querySelector("button");
+let button = document.querySelector("button");
 
 // Testing button function
 // A button click will pause the clock until alert message is gone
@@ -51,9 +51,18 @@ button.style.borderRadius = "12px";
 button.style.border = "1px";
 button.style.width = "200px";
 button.style.height = "50px";
-button.style.marginTop = "50px";
+button.style.marginTop = "10%";
 button.style.fontWeight = "bolder";
 button.style.fontSize = "25px";
 button.style.justifySelf = "center";
 button.style.cursor = "pointer";
 //----------------------------------------
+
+// onmouseover function - hover effect with setTimeout method
+function hoverColor() {
+  const button = document.getElementById("click-button");
+  button.style.backgroundColor = "var(--hover-blue)";
+  setTimeout(() => {
+    button.style.backgroundColor = "var(--light-blue)";
+  }, 1000);
+}

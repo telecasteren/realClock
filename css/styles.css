@@ -1,6 +1,7 @@
 :root {
   --dark-blue: #306ec5e6;
   --light-blue: #87b2ef;
+  --hover-blue: #5081c6;
   --white: #ffffff;
 }
 
@@ -12,13 +13,11 @@ body {
 
 .main-section {
   display: grid;
-  margin-left: 20px;
-  margin-top: 20px;
 }
 
 .title {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 10%;
   font-size: 38px;
 }
 
@@ -40,5 +39,6 @@ body {
 
 label {
   font-size: 25px;
-  margin: 10px;
+  margin: 1%;
+  margin-top: 2%;
 }
