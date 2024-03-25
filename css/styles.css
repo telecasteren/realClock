@@ -42,3 +42,18 @@ label {
   margin: 1%;
   margin-top: 2%;
 }
+
+button {
+  background-color: var(--light-blue);
+  color: black;
+  border-color: var(--light-blue);
+  border-radius: 12px;
+  border: 1px;
+  width: 200px;
+  height: 50px;
+  margin-top: 10%;
+  font-weight: bolder;
+  font-size: 25px;
+  justify-self: center;
+  cursor: pointer;
+}
